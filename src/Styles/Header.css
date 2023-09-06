@@ -1,7 +1,7 @@
 .container{
     display: flex;
     width: 100%;
-    background-color: blueviolet;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
     position: relative;
     justify-content: space-between;
     text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .colorIcon{
-    color: red;
+    color: crimson;
 }
 
 .icon{
@@ -30,15 +30,27 @@
     outline: none;
     background-color: white;
     height: 100%;
-    width: 900px;
+    width: 850px;
     padding: 0 10px;
     font-size: 20px;
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .profile-icon img{
     border-radius: 50%;
     height: 2.5rem;
+}
+
+.numResult{
+    width: 3.5rem; 
+    padding: 4px 0;
+    padding-top: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1.2rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 @media screen and (max-width:1250px) {
@@ -47,11 +59,18 @@
     }
 }
 
+@media screen and (max-width:250px) {
+    .profile-icon{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width:900px) {
     .container{
         display: block;
         padding: 0;
-        padding-bottom: 20px;
+        padding-bottom: 1.5rem;
         position: relative;
     }
     .icon{
@@ -67,7 +86,7 @@
         align-items: center;
     }
     .search-box input{
-        width: 90%;
+        width: 85%;
     }
     .profile-icon{
         position: absolute;

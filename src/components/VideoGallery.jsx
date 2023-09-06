@@ -3,17 +3,17 @@ import axios from "axios";
 import VideoCard from "./VideoCard";
 import "../Styles/VideoGallery.css";
 
-const VideoGallery = ({ search }) => {
+const VideoGallery = ({ search, numResult }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-      `https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=${search}&numResults=100`
+      `https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=${search}&numResults=${numResult}`
       )
       .then((data) => setData(data.data.results))
       .catch((e) => console.log(e));
-  }, [search]);
+  }, [search, numResult]);
 
   return (
     <div className="gallery">
