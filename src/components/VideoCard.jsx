@@ -29,7 +29,7 @@ function VideoCard({ video }) {
           <div className="name">{video.heading}</div>
 
           <Video
-            style={{ width: "100%",height:'50%', display: 'flex'}}
+            style={{ width: "100%"}}
             autoPlay={model}
             controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
           >

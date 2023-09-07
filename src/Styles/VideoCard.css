@@ -19,27 +19,46 @@
     color: white;
     margin: 10px;
 }
+
+@media screen and (max-width: 2500px) {
+    .video-container{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    .video-container{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .video-container{
+        height: 370px;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     .video-container{
-        height: 330px;
+        height: 340px;
     }
 }
 
 @media screen and (max-width: 1300px) {
     .video-container{
-        height: 300px;
+        height: 320px;
     }
 }
 
 @media screen and (max-width: 1150px) {
     .video-container{
-        height: 280px;
+        height: 310px;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1000px) {
     .video-container{
-        height: 300px;
+        height: 330px;
     }
 }
 
