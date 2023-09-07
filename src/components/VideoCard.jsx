@@ -4,7 +4,7 @@ import "react-html5video/dist/styles.css";
 import "../Styles/VideoCard.css";
 
 function VideoCard({ video }) {
-  console.log(video);
+  // console.log(video);
   const [model, setModel] = useState(false);
   const cardRef = createRef(null);
   const openModel = () => {
@@ -29,8 +29,7 @@ function VideoCard({ video }) {
           <div className="name">{video.heading}</div>
 
           <Video
-            className="video-player"
-            style={{ width: "100%", height: "80%" }}
+            style={{ width: "100%", height: "50%" }}
             autoPlay={model}
             controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
           >
