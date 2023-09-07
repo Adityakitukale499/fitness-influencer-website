@@ -29,7 +29,7 @@ function VideoCard({ video }) {
           <div className="name">{video.heading}</div>
 
           <Video
-            style={{ width: "100%", height: "50%" }}
+            style={{ width: "100%",height:'50%', display: 'flex'}}
             autoPlay={model}
             controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
           >
@@ -39,7 +39,7 @@ function VideoCard({ video }) {
           <ul className="tags">
             {video.tags.map((e, i) => (
               <li key={i} className="tag">
-                {e}
+                {e.split(' ')[0]}
               </li>
             ))}
           </ul>

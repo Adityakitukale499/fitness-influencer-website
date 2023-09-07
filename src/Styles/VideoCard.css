@@ -12,7 +12,7 @@
     overflow: hidden;
     border-radius: 10px;
     height: 500px;
-    background-color: black;
+    background-color: rgb(95, 95, 95);
 }
 
 .name{
@@ -90,6 +90,8 @@
     margin: 5px;
     overflow: hidden; 
     padding: 0;
+    position: relative;
+    bottom: 0;
   }
   
   .tags li {
